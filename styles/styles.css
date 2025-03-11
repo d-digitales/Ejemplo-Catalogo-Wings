@@ -1,0 +1,177 @@
+/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,600;1,600&family=Familjen+Grotesk:wght@400..700&display=swap');
+
+*{
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    scroll-behavior: smooth;
+
+    color: var(--main-neutral);
+}
+
+body{
+    --width-body: 600px;
+    max-width: var(--width-body);
+    margin: 0 auto;
+}
+
+h1, h2, h3 ,h4 ,h5 ,h6 , p{
+    font-size: unset;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+:root{
+    --base-size: 1rem;
+}
+
+.f-display{
+    font-size: calc(var(--base-size)*3.5);
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.h1{
+    font-size: calc(var(--base-size)*3);
+    padding: 0;
+    margin: 0;
+}
+
+.h2{
+    font-size: calc(var(--base-size)*2.5);
+}
+
+.h3{
+    font-size: calc(var(--base-size)*2.062);
+}
+.h4{
+    font-size: calc(var(--base-size)*1.75);
+}
+
+.h5{
+    font-size: calc(var(--base-size)*1.438);
+}
+
+.h6{
+    font-size: calc(var(--base-size)*1.188);
+}
+
+.text{
+    font-size:var(--base-size);
+}
+
+.text-sm{
+    font-size: calc(var(--base-size)*0.812);
+}
+.caption{
+    font-size: calc(var(--base-size)*0.688);
+}
+
+.f-display, .h1, .h2, .h3{
+    font-family: "Alumni Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.h4,.h5,.h6,.text,.text-sm,.caption{
+    font-family: "Familjen Grotesk", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+.smbold{
+    font-weight: 600;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.italic{
+    font-style: italic;
+}
+
+/* Root */
+
+:root{
+
+    /* colores */
+
+    --soft-gray: #F2F2F2;
+    --normal-gray: #E6E6E6;
+    --btn-bg-color: #D8D8D8;
+    --btn-bg-color-hover: #bdbdbd;
+    --main-neutral: #2F2F2F;
+    --intro-word-color: #1B1B1B;
+    --text-color: #4A4A4A;
+
+    /* medidas */
+
+    --6-radius: 6px;
+    --24-radius: 24px;
+
+    /* time */
+
+    --duration-expand: 1.5s;
+    --delay-expand: 50ms;
+}
+
+/* Generales */
+
+    /* color */
+
+    .df-color{
+        color: var(--main-neutral);
+    }
+    .text-color{
+        color: var(--text-color);
+    }
+
+    /* displays */
+
+    .fl-col{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block{
+        display: block;
+    }
+
+    .none{
+        display: none;
+    }
+
+    .hide{
+        opacity: 0;
+    }
+
+    .show{
+        opacity: 1;
+    }
+
+    .margin-section{
+        margin-top: 100px;
+    }
+
+/* mediaqueries */
+
+@media screen and (max-width: 450px) {
+    :root{
+        --base-size: 0.75rem;
+    }
+
+    .margin-section{
+        margin-top: 80px;
+    }
+}
